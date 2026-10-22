@@ -13,7 +13,9 @@ import {
   Trash2,
   Sparkles,
   Music,
+  Download,
 } from 'lucide-react';
+import { downloadProgressionMidi } from './core/midi-writer';
 
 export const App: React.FC = () => {
   const [currentRoot, setCurrentRoot] = useState('C');
@@ -214,6 +216,14 @@ export const App: React.FC = () => {
                   className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 disabled:opacity-40 text-white text-xs font-bold transition shadow-lg shadow-emerald-600/30"
                 >
                   <Play className="w-3.5 h-3.5" /> {isPlayingProgression ? 'Tocando...' : 'Tocar Progressão'}
+                </button>
+                <button
+                  onClick={() => downloadProgressionMidi(progression, currentRoot, 120)}
+                  disabled={progression.length === 0}
+                  className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-purple-600/30 border border-purple-500/40 hover:bg-purple-600/40 disabled:opacity-40 text-purple-300 text-xs font-bold transition"
+                  title="Exportar arquivo MIDI (.mid) para Ableton, FL Studio, Reaper, etc."
+                >
+                  <Download className="w-3.5 h-3.5" /> Exportar MIDI
                 </button>
                 <button
                   onClick={() => setProgression([])}

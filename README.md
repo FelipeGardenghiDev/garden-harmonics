@@ -14,7 +14,9 @@ Parte da **Garden Suite** — ferramentas de código aberto de nível Senior/Sta
 - 🎸 **Empréstimo Modal (Modal Interchange)**: Sugestões automáticas de acordes do modo homônimo menor ($\text{bIII, iv, bVI, bVII}$) para colorir composições de rock, pop e baladas.
 - 🔊 **Audição Polifônica Sintetizada (Web Audio API)**: Clique em qualquer acorde para ouvir suas frequências fundamentais sem necessidade de carregar samplers pesados.
 - 🎼 **Construtor de Progressões**: Monte sequências harmônicas, escute o encadeamento contínuo e estude variações para sua música.
-- 📱 **PWA & APK Android Nativo**: Empacotado via Capacitor (`@capacitor/android`) para compor no violão ou no estúdio direto pelo celular.
+- 🎹 **Exportação de Arquivo MIDI Padrão Type 0 (.mid)**: Baixe a progressão de acordes sintetizada diretamente em arquivo `.mid` puro (client-side) para arrastar e soltar na sua DAW favorita (Ableton Live, FL Studio, Reaper, Logic Pro, GarageBand).
+- 🌐 **Deploy no GitHub Pages**: Executável diretamente pelo navegador em qualquer dispositivo: [https://felipegardenghidev.github.io/garden-harmonics/](https://felipegardenghidev.github.io/garden-harmonics/)
+- 📱 **Compilação Contínua de APK Android**: A cada commit na branch `main`, o GitHub Actions compila o APK nativo (`garden-harmonics-debug-apk`) disponível para download imediato na aba **Actions**.
 
 ---
 
